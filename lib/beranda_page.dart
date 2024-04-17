@@ -21,14 +21,14 @@ class BerandaPage extends StatelessWidget {
               ),
               Text(
                 'Text B',
-                style: TextStyle(fontSize: 16, decoration: TextDecoration.underline),
+                style: TextStyle(fontSize: 18, decoration: TextDecoration.underline),
               ),
               SizedBox(height: 5),
-              Text('Text C', style: TextStyle(fontSize: 16)),
+              Text('Text C', style: TextStyle(fontSize: 18)),
               SizedBox(height: 5),
               Text(
                 'Text D',
-                style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, color: Colors.grey),
+                style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic, color: Colors.grey),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,

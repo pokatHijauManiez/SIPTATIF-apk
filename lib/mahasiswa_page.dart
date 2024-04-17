@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:siptatif_app/mahasiswa_viewpage.dart';
 
 class MahasiswaPage extends StatefulWidget {
   @override
@@ -10,7 +12,7 @@ class _MahasiswaPageState extends State<MahasiswaPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mahasiswa'),
+        title: Text('Mahasiswa',style: GoogleFonts.poppins()),
       ),
       body: ListView.separated(
         itemCount: 5,
@@ -42,6 +44,9 @@ class _MahasiswaPageState extends State<MahasiswaPage> {
               children: [
                 ElevatedButton(
                   onPressed: () {
+                    Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MahasiswaViewPage()),);
                     print('Tombol "Lihat" ditekan untuk Mahasiswa ke-${index + 1}');
                   },
                   style: ElevatedButton.styleFrom(

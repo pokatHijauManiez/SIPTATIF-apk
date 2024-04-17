@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class PengujiPage extends StatefulWidget {
   @override
@@ -10,7 +11,7 @@ class _PengujiPageState extends State<PengujiPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Penguji'),
+        title: Text('Penguji',style: GoogleFonts.poppins()),
       ),
       body: ListView.separated(
         itemCount: 3,
